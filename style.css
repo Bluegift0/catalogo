@@ -34,13 +34,24 @@ body{
     margin-bottom: 40px;
 }
 
+.icons img{
+    width: 50px;
+    align-items: normal;
+    justify-content: left;
+
+}
 .icons i{
     font-size: 20px;
     color: #ffb900;
 }
 
-.icons img{
-    width: 100px;
+.icons h2{
+    color: #fff;
+    font-family: brodwey;
+    font-size: 40px;
+    text-align: center;
+    align-items:start;
+    margin: 0 60px 0 -20px;
 }
 
 .product-content{
@@ -51,6 +62,12 @@ body{
 .product-txt{
     flex-basis: 50%;
     text-align: left;
+}
+
+.product-txt1{
+    flex-basis: 80%;
+    text-align: left;
+    line-height: 30px;
 }
 
 .product-txt span{
@@ -66,6 +83,11 @@ body{
 }
 
 .product-txt ul{
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.product-txt ol{
     font-size: 14px;
     color: #c4c4c4;
 }
@@ -88,4 +110,81 @@ body{
     color: #ffb900;
     text-decoration: none;
     margin-top: 50px;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color:#212121;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 figure{
+    width: 100%;
+    height: 100%;
+    display:flex;
+}
+
+.pie-pagina .grupo-1 figure img{
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #c4c4c4;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #a9a9a9;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #c4c4c4;
+    margin-right: 10px;
+    background-color:#151515;
+    border-radius: 22.5px;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #ffb900;
+}
+
+@media screen  and (max-width:800px){
+    .pie-pagina .grupo-1{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+    grid-gap: 30px;
+    padding: 35px 0px;
+    }
+    .pie-pagina .grupo-1 figure{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    margin-left: 10px;
+    }
 }
